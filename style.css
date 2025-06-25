@@ -1,0 +1,337 @@
+body, div, p, ul,footer,h3, button{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: floralwhite;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
+li{
+    list-style: none;
+}
+#header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background: linear-gradient(papayawhip 85%, floralwhite);
+}
+#header div{
+    padding:50px;
+}
+#header div ul li{
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 0 10px;
+    font-size: 17px;
+    font-weight: bold;
+    color:dimgray;
+}
+#header div ul li:hover {
+    color:whitesmoke;
+    background-color: dimgray;
+    border-radius:10px;
+}
+#header div ul li:active{
+    background-color: dimgray;
+    color:#ff7962;
+}
+#header div ul #current a{
+    border-bottom:3px solid dimgray;
+}
+#header #logo{
+    font-size: 70px;
+    font-family: 'Brush Script MT', cursive;
+    color: dimgray;
+    text-shadow: 8px 8px 14px dimgray;
+}
+footer{
+    padding: 30px;
+    background: linear-gradient(floralwhite , papayawhip 25%);
+    color:darkgray;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+footer #icons a{
+    display: inline-block;
+    width: 37px;
+    height: 37px;
+    background: url(./images/icons.png) no-repeat;
+    border-radius: 50%;
+    background-size: 176px 173px;
+    margin: 0 10px;
+}
+footer #icons a:hover{
+    box-shadow: 0 0 8px dimgray;
+}
+footer #icons a#facebook{
+    background-position: -3px -3px;
+}
+footer #icons a#instagram{
+    background-position: -93px -3px;
+}
+footer #icons a#linkedin{
+    background-position: -47px -45px;
+}
+footer #icons a#github{
+    background-position: -135px -45px;
+}
+footer #icons a#twitter{
+    background-position: -46px 0;
+}
+footer #icons div{
+    color:dimgray;
+    padding-bottom: 15px;
+}
+footer p{
+    font-size: 10px;
+}
+#home{
+    padding: 70px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#home a#picture{
+    display: inline-block;
+    background: url(./images/mypicture.JPG) no-repeat;
+    width: 388px;
+    height: 517px;
+    border-radius:130px;
+    background-size: cover;
+    box-shadow: 18px 10px 32px lightgray;
+    margin-left:100px;
+}
+#home #intro div{
+    text-align: center;
+    color:darkslategray;
+}
+#home #intro div:first-child{
+    font-size: 50px;
+    font-weight: bold;
+}
+#home #intro div:nth-child(2){
+    font-size: 60px;
+}
+#home #intro div:nth-child(3){
+    font-size: 22px;
+}
+#home #intro div span{
+    color: #ff7962;
+}
+#about{
+    padding: 100px 0;
+    display: flex;
+}
+#about div{
+    width: 388px;
+    height: 360px;
+    background: white;
+    margin: 25px;
+    box-shadow: 18px 10px 32px lightgray;
+    border:2px solid transparent;
+}
+#about div:hover{
+    border: 2px solid lightgray;
+}
+#about div h3{
+    text-align: center;
+    color:#ff7962;
+    font-size: 30px;
+    padding: 30px 0 20px 0;
+}
+#about div p, #about div ul li{
+    color: darkslategray;
+    text-align: justify;
+}
+#about div:first-child p{
+    padding: 40px 35px;
+    font-size: 18px;
+}
+#about div a:hover{
+    color:#ff7962;
+}
+#about div:nth-child(2) ul li{
+    margin: 10px 20px;
+    border-bottom: 1px solid lightgray;
+    list-style: square;
+    padding: 15px;
+}
+#about div:nth-child(2) ul,#about div:nth-child(3) ul {
+    margin-left: 20px;
+}
+#about div:nth-child(3) ul li{
+    margin: 30px 20px;
+    padding: 20px 10px;
+    border-bottom: 1px solid lightgray;
+    list-style: square;
+}
+#about div:nth-child(3) p{
+    font-size: 18px;
+    padding-left:10px;
+}
+#skills{
+    display: flex;
+    justify-content: space-around;
+    padding: 80px 0 0 0;
+    flex-wrap: wrap;
+    width: 900px;
+    margin: auto;
+}
+#skills div{
+    margin-bottom: 100px;
+}
+#skills div a:hover{
+    box-shadow: 0 0 58px lightgray;
+}
+#skills div a{
+    display:inline-block;
+    width: 305px;
+    height: 241px;
+    border-radius: 50%;
+}
+#skills div:first-child a{
+    background: url(./images/office.jpg) no-repeat;
+    background-size:cover;
+}
+#skills div:nth-child(2) a{
+    background: url(./images/c++.jpg) no-repeat;
+    background-size:cover;
+}
+#skills div:nth-child(3) a{
+    background: url(./images/html25.webp) no-repeat 0 -21px;
+    background-size:cover;
+}
+#skills div:nth-child(4) a{
+    background: url(./images/css3.png) no-repeat -14px 0;
+    background-size:cover;
+}
+#languages{
+    width: 900px;
+    margin: auto;
+    padding-bottom:80px;
+}
+#languages h3{
+    color: #ff7962;
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+#languages ul li{
+    font-size: 25px;
+    text-align: center;
+    border-bottom:1px solid lightgray;
+    padding: 10px;
+    margin:10px;
+    color:darkslategray;
+}
+#languages ul li span{
+    color: #ff7962;
+    font-size: 25px;
+}
+#hobby{
+    padding: 80px 0;
+}
+#hobby ul{
+    width: 700px;
+    margin: auto;
+}
+#hobby ul li{
+    font-size: 30px;
+    color:darkslategray;
+    padding: 50px 10px;
+    border: 1px solid lightgray;
+    margin:14px 0;
+}
+#hobby ul li:first-child{
+    background: url(./images/fitnes.jpg) no-repeat;
+    background-size:contain;
+}
+#hobby ul li:nth-child(2){
+    background: url(./images/reading.jpg) no-repeat center right;
+    background-size:contain;
+}
+#hobby ul li:nth-child(3){
+    background: url(./images/painting.png) no-repeat center left;
+    background-size:contain;
+}
+#hobby ul li:nth-child(4){
+    background: url(./images/watching.jpg) no-repeat center right;
+    background-size:contain;
+}
+#hobby ul li:nth-child(5){
+    background: url(./images/cooking.jpg) no-repeat center left;
+    background-size:contain;
+}
+#hobby ul li:nth-child(2n-1){
+    text-align: right;
+}
+#hobby ul li:hover{
+    border:1px solid darkgray;
+}
+#contact{
+    display: flex;
+    padding: 100px 0;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#contact form{
+    background: white;
+    width: 605px;
+    display: inline-block;
+    padding: 30px;
+    box-shadow: 18px 10px 32px lightgray;
+}
+#contact form label{
+    color:dimgray;
+}
+#contact form label input{
+    display: inline-block;
+    width: 248px;
+    height: 33px;
+}
+#contact form textarea{
+    display: inline-block;
+    width: 600px;
+    height: 200px;
+    margin: 20px 0;
+    font-size: 15px;
+}
+#contact form button{
+    display:block;
+    border:none;
+    background: #ff7962;
+    color:white;
+    padding:5px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+#contact form h3{
+    color: dimgray;
+    font-size: 40px;
+    text-align: center;
+    padding: 30px 0;
+}
+#contact form input, #contact form textarea{
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+#contact div ul li{
+    margin: 10px 0 10px 40px;
+    font-size: 15px;
+    padding: 30px 0;
+    border-bottom:1px solid lightgray;
+    color:darkslategray;
+}
+#contact div ul li a:hover,#contact div ul li span:hover {
+    color:#ff7962;
+}
